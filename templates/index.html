@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Made Pickles & Snacks — Taste the Best</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff8800;
+            color: white;
+            padding: 30px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #333;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 50px 20px;
+        }
+        main h2 {
+            font-size: 28px;
+            color: #444;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff8800;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .cta-button:hover {
+            background-color: #e67200;
+        }
+        footer {
+            margin-top: 50px;
+            background-color: #222;
+            color: #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Made Pickles & Snacks</h1>
+        <p>Taste the Best – Delivered to Your Doorstep</p>
+    </header>
+
+    <nav>
+        <a href="{{ url_for('veg_pickles') }}">Veg Pickles</a>
+        <a href="{{ url_for('non_veg_pickles') }}">Non-Veg Pickles</a>
+        <a href="{{ url_for('snacks') }}">Snacks</a>
+        <a href="{{ url_for('signup_page') }}">Signup</a>
+    </nav>
+
+    <main>
+        <h2>Welcome to the World of Authentic Homemade Flavors!</h2>
+        <p>Explore our wide variety of traditional pickles and snacks handcrafted with love and the finest ingredients.</p>
+        <a class="cta-button" href="{{ url_for('veg_pickles') }}">Start Exploring</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Home Made Pickles & Snacks. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
