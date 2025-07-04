@@ -18,7 +18,7 @@ app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'default_secret_key')
 
 # AWS Configuration
-AWS_REGION = os.getenv('AWS_REGION', 'N-Virginia')
+AWS_REGION = os.getenv('AWS_REGION', 'us-east-1')
 DYNAMODB_TABLE = os.getenv('DYNAMODB_TABLE', 'PickleOrders')
 USERS_TABLE = os.getenv('USERS_TABLE', 'users')
 
